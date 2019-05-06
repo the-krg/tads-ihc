@@ -1,0 +1,48 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ $navbar-height: 5rem;
+
+.header-image {
+  background-image: url("https://atualizacursos.com.br/blog/wp-content/uploads/2018/06/enfermagem.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ @import 'bulma';
+
+.hero .navbar {
+  background-color: rgba(0, 0, 0, .32);
+}
+
+.navbar { 
+  &-item:hover {
+    background-color: rgba(0, 0, 0, .38) !important;
+  }
+
+  .is-active {
+    background-color: rgba(0, 0, 0, .38) !important;
+  }
+}
+
+.hero-container {
+  margin: 0;
+  width: 35%;
+  padding: 20px;
+}
+
+.has-opaque-background {
+  background-color: rgba(0, 0, 0, .45) !important;
+}
